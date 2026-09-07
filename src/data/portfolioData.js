@@ -171,7 +171,7 @@ export const projects = [
     tagline: "Full-vertical IoT telemetry platform integrating ESP32-S3 firmware, custom I2C drivers, and containerized Spring Boot backend.",
     overview: "ARES-32 (Asynchronous Remote Environmental Sensing) is a distributed telemetry pipeline engineered for high-concurrency sensor acquisition and sub-second ingestion latency. The project bridges low-level C firmware, register-level hardware drivers, FreeRTOS multi-threading, and containerized cloud services.",
     tags: ["C", "ESP-IDF", "FreeRTOS", "Java 17/21", "Spring Boot", "MQTT", "PostgreSQL", "Docker", "NimBLE", "JUnit 5"],
-    github: "https://github.com/civ19/ARES-32-Platform",
+    github: "https://github.com/civ19/ARES-32-Telemetry-Platform",
     featured: true,
     highlights: [
       "Custom C-based I2C driver for the Bosch BME280 implementing manual register mapping and factory calibration compensation logic",
