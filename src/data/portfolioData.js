@@ -6,7 +6,7 @@ export const personalInfo = {
   email: "ronaldo.anthross@gmail.com",
   github: "https://github.com/civ19",
   githubUsername: "civ19",
-  linkedin: "https://linkedin.com/in/ronaldo",
+  linkedin: "https://www.linkedin.com/in/ronaldo-ross-808304321/",
   location: "Ottawa, ON, Canada",
   resumePath: "/Ronaldo_Ross_Resume.pdf",
   bio: "I am a Computer Science student at Carleton University specializing in Algorithms and Mathematics. My work focuses on real-time embedded systems—such as autonomous firmware recovery engines, DMA-driven Quad-SPI streaming, and multi-threaded sensor drivers—as well as containerized backend microservices built with Java, Spring Boot, and PostgreSQL. I also engineer autonomous mission logic, SITL simulation pipelines, and MAVLink telemetry integrations for the BlackBird UAV design team."
