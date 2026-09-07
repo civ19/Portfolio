@@ -1,6 +1,6 @@
 import React from "react";
 import { experience } from "../data/portfolioData";
-import { Briefcase, MapPin, Calendar, CheckCircle } from "lucide-react";
+import { Briefcase, Calendar } from "lucide-react";
 
 export default function Experience() {
   return (
@@ -9,10 +9,10 @@ export default function Experience() {
         <div>
           <div className="inline-flex items-center gap-2 text-teal-400 font-mono text-xs font-semibold tracking-wider uppercase mb-1">
             <Briefcase className="w-3.5 h-3.5" />
-            <span>Technical Design Teams</span>
+            <span>Systems Development</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white flex items-center gap-3">
-            <span>Work & Engineering Experience</span>
+            <span>Engineering Experience</span>
           </h2>
         </div>
 
@@ -24,9 +24,9 @@ export default function Experience() {
             >
               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
                 <div className="flex items-start gap-4">
-                  {/* Circular Avatar badge matching reference style */}
-                  <div className="w-12 h-12 rounded-full bg-slate-800/90 border border-teal-500/30 text-teal-300 font-bold font-mono text-base flex items-center justify-center shrink-0 shadow-sm">
-                    BU
+                  {/* Circular Avatar badge */}
+                  <div className="w-12 h-12 rounded-full bg-slate-800/90 border border-teal-500/30 text-teal-300 font-bold font-mono text-xs flex items-center justify-center shrink-0 shadow-sm">
+                    UAV
                   </div>
 
                   <div>
@@ -37,10 +37,7 @@ export default function Experience() {
                       {exp.organization}
                     </p>
                     <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-400 mt-1 font-mono">
-                      <span className="flex items-center gap-1">
-                        <MapPin className="w-3 h-3 text-slate-500" />
-                        {exp.location}
-                      </span>
+                      <span className="text-slate-400">{exp.location}</span>
                       <span>•</span>
                       <span className="text-slate-400">{exp.type}</span>
                     </div>
@@ -48,7 +45,7 @@ export default function Experience() {
                 </div>
 
                 <div className="sm:text-right font-mono text-xs text-slate-400 shrink-0 self-start sm:self-auto bg-slate-800/50 px-3 py-1 rounded-md border border-slate-700/50">
-                  <Calendar className="w-3 h-3 inline mr-1 text-teal-400" />
+                  <Calendar className="w-3.5 h-3.5 inline mr-1 text-teal-400" />
                   {exp.period}
                 </div>
               </div>

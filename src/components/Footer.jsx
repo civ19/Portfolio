@@ -1,7 +1,7 @@
 import React from "react";
 import { personalInfo } from "../data/portfolioData";
 import { Mail } from "lucide-react";
-import { GithubIcon, LinkedinIcon } from "./Icons";
+import { GithubIcon } from "./Icons";
 
 export default function Footer() {
   return (
@@ -17,15 +17,6 @@ export default function Footer() {
           <GithubIcon className="w-4 h-4" />
         </a>
         <a
-          href={personalInfo.linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-teal-400 transition-colors"
-          aria-label="LinkedIn"
-        >
-          <LinkedinIcon className="w-4 h-4" />
-        </a>
-        <a
           href={`mailto:${personalInfo.email}`}
           className="hover:text-teal-400 transition-colors"
           aria-label="Email"
@@ -35,7 +26,7 @@ export default function Footer() {
       </div>
 
       <p className="text-slate-400">
-        Designed & Built by {personalInfo.name} • {personalInfo.location}
+        Designed & Built by {personalInfo.name} • Systems Engineering Showcase
       </p>
     </footer>
   );

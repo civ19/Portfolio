@@ -4,13 +4,12 @@ import {
   Layers, 
   Briefcase, 
   Cpu, 
-  FileText, 
   Mail 
 } from "lucide-react";
-import { GithubIcon, LinkedinIcon } from "./Icons";
+import { GithubIcon } from "./Icons";
 import { personalInfo } from "../data/portfolioData";
 
-export default function NavbarDock({ onOpenResume }) {
+export default function NavbarDock() {
   const [activeTooltip, setActiveTooltip] = useState(null);
 
   const scrollToSection = (id) => {
@@ -46,23 +45,10 @@ export default function NavbarDock({ onOpenResume }) {
       action: () => scrollToSection("skills"),
     },
     {
-      id: "resume",
-      label: "Resume (PDF)",
-      icon: FileText,
-      action: onOpenResume,
-    },
-    {
       id: "github",
       label: "GitHub",
       icon: GithubIcon,
       href: personalInfo.github,
-      external: true,
-    },
-    {
-      id: "linkedin",
-      label: "LinkedIn",
-      icon: LinkedinIcon,
-      href: personalInfo.linkedin,
       external: true,
     },
     {

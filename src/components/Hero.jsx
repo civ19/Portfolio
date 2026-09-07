@@ -15,7 +15,7 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white font-['JetBrains_Mono',monospace]">
-            {personalInfo.name}
+            Hi, I'm {personalInfo.name}
           </h1>
 
           <p className="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed">

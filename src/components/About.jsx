@@ -22,7 +22,7 @@ export default function About() {
     {
       icon: Zap,
       title: "Autonomous Mission Software",
-      desc: "MAVLink command injection, Python companion computer automation, and SITL simulations for BlackBird UAV."
+      desc: "MAVLink command injection, Python companion computer automation, and SITL simulations for autonomous UAV platforms."
     }
   ];
 
@@ -30,7 +30,7 @@ export default function About() {
     <section id="about" className="py-12 border-t border-slate-800/80">
       <div className="space-y-6">
         <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white flex items-center gap-3">
-          <span>About</span>
+          <span>About This Showcase</span>
           <div className="h-px flex-1 bg-gradient-to-r from-teal-500/30 via-slate-800 to-transparent" />
         </h2>
 

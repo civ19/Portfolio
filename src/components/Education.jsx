@@ -1,6 +1,6 @@
 import React from "react";
 import { education } from "../data/portfolioData";
-import { GraduationCap, MapPin, Calendar, BookOpen } from "lucide-react";
+import { GraduationCap, Calendar, BookOpen } from "lucide-react";
 
 export default function Education() {
   return (
@@ -9,10 +9,10 @@ export default function Education() {
         <div>
           <div className="inline-flex items-center gap-2 text-teal-400 font-mono text-xs font-semibold tracking-wider uppercase mb-1">
             <GraduationCap className="w-3.5 h-3.5" />
-            <span>Academic Background</span>
+            <span>Foundations</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white flex items-center gap-3">
-            <span>Education</span>
+            <span>Academic Background</span>
           </h2>
         </div>
 
@@ -20,7 +20,7 @@ export default function Education() {
           <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-full bg-slate-800/90 border border-teal-500/30 text-teal-300 font-bold font-mono text-base flex items-center justify-center shrink-0">
-                CU
+                CS
               </div>
 
               <div>
@@ -33,11 +33,6 @@ export default function Education() {
                 <p className="text-xs text-slate-300 font-mono mt-0.5">
                   {education.minor}
                 </p>
-
-                <div className="flex items-center gap-1.5 text-xs text-slate-400 mt-2 font-mono">
-                  <MapPin className="w-3.5 h-3.5 text-slate-500" />
-                  <span>{education.location}</span>
-                </div>
               </div>
             </div>
 

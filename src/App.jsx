@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Starfield from "./components/Starfield";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -8,13 +8,10 @@ import Skills from "./components/Skills";
 import Education from "./components/Education";
 import Footer from "./components/Footer";
 import NavbarDock from "./components/NavbarDock";
-import ResumeModal from "./components/ResumeModal";
 
 export default function App() {
-  const [isResumeOpen, setIsResumeOpen] = useState(false);
-
   return (
-    <div className="relative min-h-screen bg-[#070b14] text-slate-100 selection:bg-teal-500/30 selection:text-teal-200">
+    <div className="relative min-h-screen bg-[#04070f] text-slate-100 selection:bg-teal-500/30 selection:text-teal-200">
       {/* Background Starfield Canvas */}
       <Starfield />
 
@@ -28,9 +25,9 @@ export default function App() {
         className="fixed bottom-0 right-1/4 translate-x-1/2 w-[700px] h-[600px] bg-cyan-950/10 rounded-full blur-[160px] pointer-events-none"
       />
 
-      {/* Main Content Container matching reference layout width */}
+      {/* Main Content Container */}
       <div className="relative z-10 max-w-4xl mx-auto px-5 sm:px-8 lg:px-10">
-        <Hero onOpenResume={() => setIsResumeOpen(true)} />
+        <Hero />
         <About />
         <Projects />
         <Experience />
@@ -40,13 +37,7 @@ export default function App() {
       </div>
 
       {/* Floating Bottom Quick-Nav Dock */}
-      <NavbarDock onOpenResume={() => setIsResumeOpen(true)} />
-
-      {/* Resume Modal */}
-      <ResumeModal
-        isOpen={isResumeOpen}
-        onClose={() => setIsResumeOpen(false)}
-      />
+      <NavbarDock />
     </div>
   );
 }
