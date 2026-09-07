@@ -15,7 +15,7 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white font-['JetBrains_Mono',monospace]">
-            Hi, I'm {personalInfo.name}
+            {personalInfo.name}
           </h1>
 
           <p className="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed">
@@ -64,7 +64,7 @@ export default function Hero() {
           {/* Cyan / Teal radiant aura glow */}
           <div 
             aria-hidden="true"
-            className="absolute -inset-6 rounded-full bg-gradient-to-br from-teal-500/40 via-cyan-500/30 to-emerald-500/10 blur-2xl pointer-events-none transform -scale-105 animate-pulse-slow"
+            className="absolute -inset-6 rounded-full bg-gradient-to-br from-teal-500/30 via-cyan-500/20 to-emerald-500/5 blur-2xl pointer-events-none transform -scale-105"
           />
           <div 
             aria-hidden="true"
