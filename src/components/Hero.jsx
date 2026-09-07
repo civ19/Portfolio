@@ -1,19 +1,20 @@
 import React from "react";
 import { personalInfo } from "../data/portfolioData";
-import { ArrowUpRight, FileText, MapPin, Terminal } from "lucide-react";
+import { ArrowUpRight, Terminal, Cpu } from "lucide-react";
+import { GithubIcon } from "./Icons";
 
-export default function Hero({ onOpenResume }) {
+export default function Hero() {
   return (
     <section className="relative pt-12 pb-14 md:pt-20 md:pb-20">
       <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-8 md:gap-12">
         {/* Left column: Text info */}
         <div className="flex-1 space-y-4 max-w-2xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-950/40 border border-teal-800/40 text-teal-300 text-xs font-mono tracking-wide">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-950/40 border border-teal-800/40 text-teal-300 text-xs font-['JetBrains_Mono',monospace] tracking-wide">
             <span className="w-2 h-2 rounded-full bg-teal-400 animate-pulse" />
-            <span>Firmware & Backend Systems</span>
+            <span>Systems &amp; Software Showcase</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white font-['JetBrains_Mono',monospace]">
             Hi, I'm {personalInfo.name}
           </h1>
 
@@ -23,8 +24,8 @@ export default function Hero({ onOpenResume }) {
 
           <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-sm text-slate-400 font-mono">
             <div className="flex items-center gap-1.5">
-              <MapPin className="w-4 h-4 text-teal-400" />
-              <span>{personalInfo.location}</span>
+              <Cpu className="w-4 h-4 text-teal-400" />
+              <span>Embedded & Distributed Systems</span>
             </div>
             <span className="text-slate-600 hidden sm:inline">•</span>
             <div className="flex items-center gap-1.5">
@@ -46,14 +47,15 @@ export default function Hero({ onOpenResume }) {
               <ArrowUpRight className="w-4 h-4" />
             </button>
 
-            <button
-              type="button"
-              onClick={onOpenResume}
-              className="px-5 py-2.5 rounded-lg bg-slate-900/80 hover:bg-slate-800 text-slate-200 hover:text-white border border-slate-700 font-medium text-sm transition-all duration-200 flex items-center gap-2 cursor-pointer"
+            <a
+              href={personalInfo.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2.5 rounded-lg bg-slate-900/80 hover:bg-slate-800 text-slate-200 hover:text-white border border-slate-700 font-medium text-sm transition-all duration-200 flex items-center gap-2"
             >
-              <FileText className="w-4 h-4 text-teal-400" />
-              <span>View Resume</span>
-            </button>
+              <GithubIcon className="w-4 h-4 text-teal-400" />
+              <span>GitHub</span>
+            </a>
           </div>
         </div>
 
@@ -72,7 +74,7 @@ export default function Hero({ onOpenResume }) {
           {/* Avatar Disc */}
           <div className="relative w-28 h-28 sm:w-36 sm:h-36 rounded-full bg-gradient-to-b from-teal-900/70 to-slate-950 border border-teal-500/50 shadow-[0_0_30px_rgba(20,184,166,0.4)] flex items-center justify-center group overflow-hidden">
             <div className="absolute inset-0 bg-radial-gradient from-teal-500/20 to-transparent pointer-events-none" />
-            <span className="text-3xl sm:text-4xl font-bold font-mono tracking-wider text-teal-200 select-none drop-shadow-[0_0_12px_rgba(45,212,191,0.6)]">
+            <span className="text-2xl sm:text-3xl font-bold font-mono tracking-wider text-teal-200 select-none drop-shadow-[0_0_12px_rgba(45,212,191,0.6)]">
               {personalInfo.initials}
             </span>
           </div>

@@ -1,37 +1,33 @@
 export const personalInfo = {
-  name: "Ronaldo Ross",
-  initials: "RR",
-  title: "Systems & Software Engineer",
-  subtitle: "Computer Science @ Carleton University • Embedded Systems, RTOS & Distributed Backend Infrastructure",
-  email: "ronaldo.anthross@gmail.com",
+  name: ".cv",
+  initials: ".cv",
+  title: "Systems & Software Developer",
+  subtitle: "Computer Science & Mathematics • Embedded Systems, RTOS, IoT & Distributed Backend Infrastructure",
+  email: "civ19.dev@proton.me",
   github: "https://github.com/civ19",
   githubUsername: "civ19",
-  linkedin: "https://linkedin.com/in/ronaldo",
-  location: "Ottawa, ON, Canada",
-  resumePath: "/Ronaldo_Ross_Resume.pdf",
-  bio: "I am a Computer Science student at Carleton University specializing in Algorithms and Mathematics. My work focuses on real-time embedded systems—such as autonomous firmware recovery engines, DMA-driven Quad-SPI streaming, and multi-threaded sensor drivers—as well as containerized backend microservices built with Java, Spring Boot, and PostgreSQL. I also engineer autonomous mission logic, SITL simulation pipelines, and MAVLink telemetry integrations for the BlackBird UAV design team."
+  bio: "A developer showcase exploring low-level systems and embedded firmware—such as autonomous firmware recovery engines, DMA-driven Quad-SPI streaming, and multi-threaded sensor drivers—alongside containerized backend microservices built with Java, Spring Boot, and PostgreSQL. Also engineering autonomous mission logic, SITL simulation pipelines, and MAVLink telemetry integrations for an autonomous UAV design team."
 };
 
 export const education = {
-  institution: "Carleton University",
-  location: "Ottawa, ON",
-  degree: "Bachelor of Computer Science (BCS) - Specialization in Algorithms",
-  minor: "Minor in Mathematics",
-  period: "Sept 2025 – Jun 2029",
+  institution: "Computer Science Background",
+  degree: "Algorithms & Systems Focus",
+  minor: "Mathematics Minor",
+  period: "Foundational Systems & Mathematics",
   details: [
     "Focus areas: Algorithmic Complexity, Discrete Mathematics, Data Structures, Low-Level Systems, Real-Time Operating Systems",
-    "Active member and Software Developer on the BlackBird UAV Technical Design Team"
+    "Active contributor and Software Developer on an autonomous UAV Design Team"
   ]
 };
 
 export const experience = [
   {
     role: "Software Developer",
-    organization: "BlackBird UAV (BBUAV)",
-    location: "Ottawa, ON",
+    organization: "UAV Design Team",
+    location: "Flight Software Division",
     period: "May 2026 – Present",
-    type: "Technical Design Team",
-    summary: "Developing autonomous flight mission logic, real-time telemetry protocols, and Linux companion computer automation for autonomous unmanned aerial vehicles.",
+    type: "Autonomous Systems Team",
+    summary: "Developing autonomous flight mission logic, real-time telemetry protocols, and Linux companion computer automation for unmanned aerial vehicles.",
     points: [
       "Engineered Python automation scripts deployed on Linux-based Raspberry Pi companion computers to orchestrate real-time mission logic and waypoint execution.",
       "Architected telemetry pipelines using MAVLink protocol to bridge Mission Planner with onboard Python runtimes, enabling dynamic autonomous command injection.",
